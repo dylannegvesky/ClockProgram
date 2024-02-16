@@ -1,2 +1,5 @@
 # ClockProgram
-Program that allows a user to create a clock object, adjust for overflow of appropriate data members, and use operators (i.e. addition, insertion, etc.).
+Program that allows a user to create a clock object, adjust for overflow of appropriate data members, and use operators on their object.
+
+"clock.h":
+Includes the declaration of the "Clock" class as well as all friend or member functions. The friend function declarations are all operator overloads and include the following operators: addition, subtraction, negation, less than, greater than, is eqaul to, and the insertion operator. All of these functions ensure that the object being sent in cannot be changed if appropriate. In the private section are the data members of all Clock objects: seconds, minutes, hours, and days. In the public section, we first have four constructors: a default, an explicitly declared conversion constructor, a two-paramter constructor, and a four-parameter constructor. Next we have four const getter member functions that return the appropriate private data members to the location of the call. Then, four setters for setting private members to the value sent with the call. Finally, a reset function.
